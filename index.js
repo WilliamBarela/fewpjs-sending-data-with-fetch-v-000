@@ -1,8 +1,8 @@
 // Add your code here
 function submitData(name, email){
   let userData = {
-    [name]: name,
-    [email]: email
+    name: name,
+    email: email
   };
   
   console.log(userData);
