@@ -2,4 +2,17 @@
 let userData = {
   name: "William Barela",
   email: "william.barela.dev@gmail.com"
-}
+};
+
+let configObj = {
+  headers: {
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+  },
+  body: JSON.stringify(userData)
+};
+
+fetch(url, configObj)
+.then(resp => resp.json())
+.then(object => console.log(object))
+.catch(errors => console.log(errors))
