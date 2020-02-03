@@ -1,19 +1,21 @@
 // Add your code here
-let userData = {
-  name: "William Barela",
-  email: "william.barela.dev@gmail.com"
-};
+function submitData(name, email){
+  let userData = {
+    [name]: name,
+    [email]: email
+  };
 
-let configObj = {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "Accept": "application/json"
-  },
-  body: JSON.stringify(userData)
-};
+  let configObj = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify(userData)
+  };
 
-fetch(url, configObj)
-        .then(resp => resp.json())
-        .then(object => console.log(object))
-        .catch(errors => console.log(errors))
+  fetch(url, configObj)
+  .then(resp => resp.json())
+  .then(object => console.log(object))
+  .catch(errors => console.log(errors))
+}
