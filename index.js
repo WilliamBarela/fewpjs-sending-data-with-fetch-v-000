@@ -18,6 +18,6 @@ function submitData(name, email){
 
   return fetch(url, configObj)
   .then(resp => resp.json())
-  .then(object => console.log(object))
+  .then(object => document.body.inner)
   .catch(errors => console.log(errors))
 }
