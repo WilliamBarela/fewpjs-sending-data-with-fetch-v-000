@@ -13,7 +13,7 @@ let configObj = {
   body: JSON.stringify(userData)
 };
 
-fetch(url, configObj)
-.then(resp => resp.json())
-.then(object => console.log(object))
-.catch(errors => console.log(errors))
+return fetch(url, configObj)
+        .then(resp => resp.json())
+        .then(object => console.log(object))
+        .catch(errors => console.log(errors))
