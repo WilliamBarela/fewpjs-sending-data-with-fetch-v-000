@@ -6,7 +6,7 @@ function submitData(name, email){
   };
   
   console.log(userData);
-
+  /*
   let configObj = {
     method: "POST",
     headers: {
@@ -20,6 +20,7 @@ function submitData(name, email){
   .then(resp => resp.json())
   .then(object => console.log(object))
   .catch(errors => console.log(errors))
+  */
 }
 
 submitData("William", "Someemail@email.com");
