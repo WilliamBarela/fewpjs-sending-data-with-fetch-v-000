@@ -1,5 +1,7 @@
 // Add your code here
 function submitData(name, email){
+  const url = 'http://localhost:3000/users'
+  
   let userData = {
     name: name,
     email: email
@@ -14,7 +16,7 @@ function submitData(name, email){
     body: JSON.stringify(userData)
   };
 
-  fetch(url, configObj)
+  return fetch(url, configObj)
   .then(resp => resp.json())
   .then(object => console.log(object))
   .catch(errors => console.log(errors))
