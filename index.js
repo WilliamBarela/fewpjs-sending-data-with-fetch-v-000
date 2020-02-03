@@ -21,3 +21,5 @@ function submitData(name, email){
   .then(object => console.log(object))
   .catch(errors => console.log(errors))
 }
+
+submitData("William", "Someemail@email.com");
