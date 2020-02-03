@@ -4,6 +4,8 @@ function submitData(name, email){
     [name]: name,
     [email]: email
   };
+  
+  console.log(userData);
 
   let configObj = {
     method: "POST",
